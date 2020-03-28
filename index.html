@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailmix</title>
+    <link rel="stylesheet" href="public/css/app.css">
+    <style>
+        .dropdown:hover>.dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header class=" top-0 lef-0 w-full z-60 border-b border-gray-200">
+        <div class=" mx-auto px-6 h-16 flex md:justify-between justify-start items-center">
+            <div class="flex items-center flex-shrink-0 text-teal-500 mr-6">
+                <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
+                </svg>
+                <span class="font-semibold text-xl tracking-tight">Tailwind CSS</span>
+            </div>
+
+            <div class="sm:flex hidden justify-start items-center ">
+                <div class="dropdown inline-block relative">
+                    <a class="text-gray-900 font-semibold my-2 mx-4 w-32 rounded inline-flex items-center">
+                        <span>Category</span>
+                    </a>
+                    <div class="pointer-events-none absolute right-0 top-0 mr-2 mt-3 text-grey">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                        </svg>
+                    </div>
+                    <ul class="dropdown-content absolute hidden text-gray-700 pt-1">
+                        <li><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                href="#">Option 1</a></li>
+                        <li><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Option
+                                2</a></li>
+                        <li class="dropdown">
+                            <a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Option
+                                3</a>
+                        </li>
+                        <li><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                href="#">Option 4</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="w-full hidden mx-auto md:justify-center md:flex lg:justify-end items-center">
+                <nav class="lg:flex-row items-center">
+                    <a rel="nofollow" title="Submit Tailwind component" href="#"
+                        class="lg:ml-4 py-2 px-5 rounded-full bg-teal-500 text-white font-bold">Submit your own</a>
+                    <a rel="nofollow" title="Login Tailwind components" href="#"
+                        class="py-2 px-5 text-gray-900 sm:text-secondary opacity-75 hover:opacity-100 mt-8 lg:mt-0">Login</a>
+                </nav>
+            </div>
+        </div>
+        <a href="#" class="lg:hidden absolute right-0 top-0 my-5 mx-6 flex nav-toggle z-20">
+            <svg class="fill-current h-5 w-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <title>Menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+        </a>
+    </header>
+
+    <div class="w-full text-center px-5 py-20 md:p-32 bg-teal-100">
+        <div class="container flex flex-col mx-auto px-6 flex items-center">
+            <div class="w-full">
+                <h1 class="text-2xl sm:text-3xl text-secondary mb-2">A repository for community components using
+                    <strong>TailwindCSS</strong></h1>
+                <div>
+                    <div class="w-full">
+                        <input
+                            class="rounded-full w-full md:w-10/12 mx-auto p-3 border-t mr-0 border-b border-l text-gray-800 border-gray-200 bg-white"
+                            placeholder="Search components by name, type or author name" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class=" mx-auto">
+                <ul class="flex-wrap flex-1 flex mt-4">
+                    <li class="mr-2 mb-2">
+                        <a href="#" title="TailwindCSS button"
+                            class="text-primary hover:text-white hover:bg-primary border border-primary py-1 px-3 rounded text-xs block">Plants</a>
+                    </li>
+                    <li class="mr-2 mb-2">
+                        <a href="#" title="TailwindCSS form"
+                            class="text-primary hover:text-white hover:bg-primary border border-primary py-1 px-3 rounded text-xs block">Animals</a>
+                    </li>
+                    <li class="mr-2 mb-2">
+                        <a href="#" title="TailwindCSS navigation"
+                            class="text-primary hover:text-white hover:bg-primary border border-primary py-1 px-3 rounded text-xs block">Chartoons</a>
+                    </li>
+                    <li class="mr-2 mb-2">
+                        <a href="#" title="TailwindCSS card"
+                            class="text-primary hover:text-white hover:bg-primary border border-primary py-1 px-3 rounded text-xs block">Tiger</a>
+                    </li>
+                    <li class="mr-2 mb-2">
+                        <a href="#" title="TailwindCSS widget"
+                            class="text-primary hover:text-white hover:bg-primary border border-primary py-1 px-3 rounded text-xs block">Ship</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <nav>
+        <ul class="list-reset flex ml-0 md:ml-56 overflow-x-auto">
+            <li class="text-center py-3 px-8 border-b-8 border-solid hover:border-green-500 hover:font-semibold"><a
+                    href="#" class="text-sm md:text-lg text-black">Printable Worksheet</a></li>
+            <li class="text-center py-3 hover:border-gray-900 px-8"><a href="#"
+                    class="hover:text-sm md:text-lg text-black">Cologing
+                    Page</a></li>
+            <li class="text-center py-3 hover:border-gray-900 px-8"><a href="#"
+                    class="hover:text-sm md:text-lg text-black">About</a>
+            </li>
+            <li class="text-center py-3 hover:border-gray-900 px-8"><a href="#"
+                    class="hover:text-sm md:text-lg text-black">Community</a>
+            </li>
+            <li class="text-center py-3 hover:border-gray-900 px-8"><a href="#"
+                    class="hover:text-sm md:text-lg text-black">Community</a>
+            </li>
+            <li class="text-center py-3 hover:border-gray-900 px-8"><a href="#"
+                    class="hover:text-sm md:text-lg text-black">Community</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <div class="flex justify-between items-center flex-col md:flex-row pt-4">
+            <p class="pl-12"> 10,213 results</p>
+            <div class="flex items-baseline p-6">
+                <p>Sort By</p>
+                <div class="w-48 inline-block relative mb-4 md:mb-0 md:mr-4 pl-5">
+                    <select
+                        class="leading-tight block appearance-none w-full bg-white border border-grey-light px-3 py-2 pr-8 rounded">
+                        <option>English</option>
+                    </select>
+                    <div class="pointer-events-none absolute right-0 top-0 mr-2 mt-3 text-grey">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="flex overflow-hidden">
+            <!-- Sidebar / channel list -->
+            <div class="hidden bg-white text-white lg:w-1/5 md:w-2/6 md:block">
+                <div class="px-4 mt-5 text-xl"> <strong> Subject </strong></div>
+
+                <div class="flex items-center mb-3 px-4">
+                    <span class="bg-green rounded-full block w-2 h-2 mr-2"></span>
+                    <a href="" class="text-gray-900">Math</a>
+                </div>
+
+                <div class="flex items-center mb-3 px-4">
+                    <span class="bg-green rounded-full block w-2 h-2 mr-2"></span>
+                    <a href="" class="text-gray-900">Reading Writing</a>
+                </div>
+
+                <div class="flex items-center mb-3 px-4">
+                    <span class="bg-green rounded-full block w-2 h-2 mr-2"></span>
+                    <a href="" class="text-gray-900">Social Emotional</a>
+                </div>
+
+                <div class="flex items-center mb-3 px-4">
+                    <span class="bg-green rounded-full block w-2 h-2 mr-2"></span>
+                    <a href="" class="text-gray-900">Typing</a>
+                </div>
+                <div class="px-4 mt-3 text-xl"> <strong> Topic</strong></div>
+
+                <div class="flex items-center mb-3 px-4">
+                    <span class="bg-green rounded-full block w-2 h-2 mr-2"></span>
+                    <a href="" class="text-gray-900">Math</a>
+                </div>
+
+                <div class="flex items-center mb-3 px-4">
+                    <span class="bg-green rounded-full block w-2 h-2 mr-2"></span>
+                    <a href="" class="text-gray-900">Reading Writing</a>
+                </div>
+
+                <div class="flex items-center mb-3 px-4">
+                    <span class="bg-green rounded-full block w-2 h-2 mr-2"></span>
+                    <a href="" class="text-gray-900">Social Emotional</a>
+                </div>
+
+                <div class="flex items-center mb-3 px-4">
+                    <span class="bg-green rounded-full block w-2 h-2 mr-2"></span>
+                    <a href="" class="text-gray-900">Typing</a>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="w-full flex px-3 py-2">
+                <div class="flex flex-wrap -mx-1 lg:-mx-4">
+
+                    <!-- Column -->
+                    <div class="my-1 px-1 w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4">
+
+                        <!-- Article -->
+                        <article class="overflow-hidden rounded-md shadow-md hover:shadow-xl">
+
+                            <a href="#">
+                                <img alt="Placeholder" class="block h-auto w-full"
+                                    src="https://picsum.photos/600/400/?random">
+                            </a>
+
+                            <header class="items-start p-3 ">
+
+                                <h1 class="text-sm md:text-sm">
+                                    <a class="no-underline hover:underline text-sm md:text-lg text-black" href="#">
+                                        Number Sentence Superstar Addition
+                                    </a>
+                                </h1>
+
+                                <div class="relative text-gray-900">
+                                    <div class="flex justify-between">
+                                        <span class="block text-sm font-light">Peace Lily</span>
+                                    </div>
+                                </div>
+
+                            </header>
+                        </article>
+                        <!-- END Article -->
+
+                    </div>
+                    <!-- END Column -->
+                    <!-- Column -->
+                    <div class="my-1 px-1 w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4">
+
+                        <!-- Article -->
+                        <article class="overflow-hidden rounded-md shadow-md hover:shadow-xl">
+
+                            <a href="#">
+                                <img alt="Placeholder" class="block h-auto w-full"
+                                    src="https://picsum.photos/600/400/?random">
+                            </a>
+
+                            <header class="items-start p-3 ">
+
+                                <h1 class="text-sm md:text-sm">
+                                    <a class="no-underline hover:underline text-sm md:text-lg text-black" href="#">
+                                        Number Sentence Superstar Addition
+                                    </a>
+                                </h1>
+
+                                <div class="relative text-gray-900">
+                                    <div class="flex justify-between">
+                                        <span class="block text-sm font-light">Peace Lily</span>
+                                    </div>
+                                </div>
+
+                            </header>
+                        </article>
+                        <!-- END Article -->
+
+                    </div>
+                    <!-- END Column -->
+                    <!-- Column -->
+                    <div class="my-1 px-1 w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4">
+
+                        <!-- Article -->
+                        <article class="overflow-hidden rounded-md shadow-md hover:shadow-xl">
+
+                            <a href="#">
+                                <img alt="Placeholder" class="block h-auto w-full"
+                                    src="https://picsum.photos/600/400/?random">
+                            </a>
+
+                            <header class="items-start p-3 ">
+
+                                <h1 class="text-sm md:text-sm">
+                                    <a class="no-underline hover:underline text-sm md:text-lg text-black" href="#">
+                                        Number Sentence Superstar Addition
+                                    </a>
+                                </h1>
+
+                                <div class="relative text-gray-900">
+                                    <div class="flex justify-between">
+                                        <span class="block text-sm font-light">Peace Lily</span>
+                                    </div>
+                                </div>
+
+                            </header>
+                        </article>
+                        <!-- END Article -->
+
+                    </div>
+                    <!-- END Column -->
+                    <!-- Column -->
+                    <div class="my-1 px-1 w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4">
+
+                        <!-- Article -->
+                        <article class="overflow-hidden rounded-md shadow-md hover:shadow-xl">
+
+                            <a href="#">
+                                <img alt="Placeholder" class="block h-auto w-full"
+                                    src="https://picsum.photos/600/400/?random">
+                            </a>
+
+                            <header class="items-start p-3 ">
+
+                                <h1 class="text-sm md:text-sm">
+                                    <a class="no-underline hover:underline text-sm md:text-lg text-black" href="#">
+                                        Number Sentence Superstar Addition
+                                    </a>
+                                </h1>
+
+                                <div class="relative text-gray-900">
+                                    <div class="flex justify-between">
+                                        <span class="block text-sm font-light">Peace Lily</span>
+                                    </div>
+                                </div>
+
+                            </header>
+                        </article>
+                        <!-- END Article -->
+
+                    </div>
+                    <!-- END Column -->
+                    <!-- Column -->
+                    <div class="my-1 px-1 w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4">
+
+                        <!-- Article -->
+                        <article class="overflow-hidden rounded-md shadow-md hover:shadow-xl">
+
+                            <a href="#">
+                                <img alt="Placeholder" class="block h-auto w-full"
+                                    src="https://picsum.photos/600/400/?random">
+                            </a>
+
+                            <header class="items-start p-3 ">
+
+                                <h1 class="text-sm md:text-sm">
+                                    <a class="no-underline hover:underline text-sm md:text-lg text-black" href="#">
+                                        Number Sentence Superstar Addition
+                                    </a>
+                                </h1>
+
+                                <div class="relative text-gray-900">
+                                    <div class="flex justify-between">
+                                        <span class="block text-sm font-light">Peace Lily</span>
+                                    </div>
+                                </div>
+
+                            </header>
+                        </article>
+                        <!-- END Article -->
+
+                    </div>
+                    <!-- END Column -->
+                    <!-- Column -->
+                    <div class="my-1 px-1 w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4">
+
+                        <!-- Article -->
+                        <article class="overflow-hidden rounded-md shadow-md hover:shadow-xl">
+
+                            <a href="#">
+                                <img alt="Placeholder" class="block h-auto w-full"
+                                    src="https://picsum.photos/600/400/?random">
+                            </a>
+
+                            <header class="items-start p-3 ">
+
+                                <h1 class="text-sm md:text-sm">
+                                    <a class="no-underline hover:underline text-sm md:text-lg text-black" href="#">
+                                        Number Sentence Superstar Addition
+                                    </a>
+                                </h1>
+
+                                <div class="relative text-gray-900">
+                                    <div class="flex justify-between">
+                                        <span class="block text-sm font-light">Peace Lily</span>
+                                    </div>
+                                </div>
+
+                            </header>
+                        </article>
+                        <!-- END Article -->
+
+                    </div>
+                    <!-- END Column -->
+                    <!-- Column -->
+                    <div class="my-1 px-1 w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4">
+
+                        <!-- Article -->
+                        <article class="overflow-hidden rounded-md shadow-md hover:shadow-xl">
+
+                            <a href="#">
+                                <img alt="Placeholder" class="block h-auto w-full"
+                                    src="https://picsum.photos/600/400/?random">
+                            </a>
+
+                            <header class="items-start p-3 ">
+
+                                <h1 class="text-sm md:text-sm">
+                                    <a class="no-underline hover:underline text-sm md:text-lg text-black" href="#">
+                                        Number Sentence Superstar Addition
+                                    </a>
+                                </h1>
+
+                                <div class="relative text-gray-900">
+                                    <div class="flex justify-between">
+                                        <span class="block text-sm font-light">Peace Lily</span>
+                                    </div>
+                                </div>
+
+                            </header>
+                        </article>
+                        <!-- END Article -->
+
+                    </div>
+                    <!-- END Column -->
+                    <!-- Column -->
+                    <div class="my-1 px-1 w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4">
+
+                        <!-- Article -->
+                        <article class="overflow-hidden rounded-md shadow-md hover:shadow-xl">
+
+                            <a href="#">
+                                <img alt="Placeholder" class="block h-auto w-full"
+                                    src="https://picsum.photos/600/400/?random">
+                            </a>
+
+                            <header class="items-start p-3 ">
+
+                                <h1 class="text-sm md:text-sm">
+                                    <a class="no-underline hover:underline text-sm md:text-lg text-black" href="#">
+                                        Number Sentence Superstar Addition
+                                    </a>
+                                </h1>
+
+                                <div class="relative text-gray-900">
+                                    <div class="flex justify-between">
+                                        <span class="block text-sm font-light">Peace Lily</span>
+                                    </div>
+                                </div>
+
+                            </header>
+                        </article>
+                        <!-- END Article -->
+
+                    </div>
+                    <!-- END Column -->
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="bg-teal-500">
+            <div class="container mx-auto px-4">
+                <div class="md:flex justify-between items-center text-sm">
+                    <div class="text-center md:text-left py-3 md:py-4 ">
+                        <a href="#" class="no-underline text-white mr-4">Home</a>
+                        <a href="#" class="no-underline text-white mr-4">Careers</a>
+                        <a href="#" class="no-underline text-white">Legal &amp; Privacy</a>
+                    </div>
+                    <div class="md:flex md:flex-row-reverse items-center py-4">
+                        <div class="text-center mb-4 md:mb-0 md:flex">
+                            <div class="w-48 inline-block relative mb-4 md:mb-0 md:mr-4">
+                                <select
+                                    class="leading-tight block appearance-none w-full bg-white border border-grey-light px-3 py-2 pr-8 rounded">
+                                    <option>English</option>
+                                </select>
+                                <div class="pointer-events-none absolute right-0 top-0 mr-2 mt-3 text-grey">
+                                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20">
+                                        <path
+                                            d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="#"
+                                    class="inline-block leading-tight bg-blue border border-blue-dark hover:bg-blue-dark px-3 py-2 text-white no-underline rounded">Need
+                                    help?</a>
+                            </div>
+                        </div>
+                        <div class="text-white text-center md:mr-4">&copy; 2017 Cointoad</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
