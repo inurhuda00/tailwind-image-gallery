@@ -18,3 +18,5 @@ npm run watch
 * [Laravel Mix](https://laravel-mix.com/)
 
 just it :)
+
+check https://tailwind-image-gallery.now.sh/
